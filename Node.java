@@ -3,7 +3,7 @@
 public class Node {
    
     // a pointer to a CharData object
-    CharData cp;
+    CharData cd;
  
     // a pointer to a Node object
     Node next;  // pointer
@@ -11,7 +11,7 @@ public class Node {
     /** Constructs a node with the given CharData object.
      *  The new node will point to the given next node. */
     public Node(CharData cp, Node next) {
-       this.cp = cp;
+       this.cd = cp;
        this.next = next;
     }
          
@@ -23,6 +23,6 @@ public class Node {
  
     /** Textual representation of this node. */
     public String toString() {
-       return "" + cp;
+       return "" + cd;
     }
  }
